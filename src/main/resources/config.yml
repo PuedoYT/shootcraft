@@ -1,0 +1,30 @@
+map: #use "<x> <y> <z>, <yaw> <pitch>"
+  world: world
+  spawns:
+    - 100 10 100, 0 0
+    - 120 10 120, 1 1
+
+game:
+  killsForWin: 0 #0 (or less) for unlimited
+  maxGameDuration: 180 #in seconds
+  maxPlayerCount: 90
+  broadcastPrefix: "§6[ShootCraft] §f"
+
+lives:
+  startingLives: 1
+  respawnLives: 1
+  maxLives: 3
+  liveOnDoubleKill: true
+  liveOnKillStreak: [4, 8, 10, 15] #killstreaks on which you'll get a new life
+
+spawn: # in ticks
+  respawnDuration: 20 #1s, seems reasonable
+  spawnProtectionDuration: 10 #500ms, seems reasonable
+
+boost:
+  halfHungerLossOnBoost: 10 # half hunger losses, multiply normal hunger by 2
+  ticksPerHalfHungerRegain: 10 # multiply by halfHungerLossOnBoost
+  boostTime: 50 #2.5s, seems good
+
+gun:
+  gunDelayDuration: 20 #1s, seems reasonable

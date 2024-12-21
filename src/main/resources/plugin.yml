@@ -1,0 +1,9 @@
+name: ShootCraft
+version: '${project.version}'
+main: gg.funkraft.ShootCraft
+commands:
+  force_start:
+    description: force start the game /!\DEV ONLY/!\
+    usage: /force_start
+  particle:
+  stats:
